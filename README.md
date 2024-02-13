@@ -2,6 +2,8 @@
 
 Spotify Tracks, Genre, Audio Features data analysis using SQLite and PowerPipe.
 
+![spotify-analysis-dashboard-dashboard-image](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/27b35dd0-ecdb-4277-bf1e-4392997a62e1)
+
 ## Installation
 
 Download and install Powerpipe (https://powerpipe.io/downloads). Or use Brew:
