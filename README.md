@@ -26,7 +26,7 @@ Download the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/ma
 Unzip the file to the cloned mod directory.
 
 ```sh
-unzip /Users/root/Downloads/archive.zip
+unzip /Users/username/Downloads/archive.zip
 ```
 
 ## Usage
