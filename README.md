@@ -21,7 +21,7 @@ cd powerpipe-mod-spotify
 
 ## Get the Dataset
 
-Download the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features).
+Log in to Kaggle, download the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features).
 
 Unzip the file to the cloned mod directory.
 
