@@ -1,8 +1,8 @@
 # Spotify Data Analysis Mod for PowerPipe
 
-Spotify Tracks, Genre, Audio Features data analysis using SQLite and PowerPipe.
+Spotify Tracks, Genre and Audio Features data analysis using SQLite and PowerPipe.
 
-![spotify-analysis-dashboard-dashboard-image](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/27b35dd0-ecdb-4277-bf1e-4392997a62e1)
+![spotify-analysis-dashboard](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/a80f0972-b993-4d2f-95c3-7429a20ac789)
 
 ## Installation
 

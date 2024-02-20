@@ -1,32 +1,27 @@
 dashboard "spotify_analysis_dashboard" {
   title = "Spotify Analysis Dashboard"
 
-  # Container: Overview
   container {
     title = "Overview"
 
-    # Card: Total Artists
     card {
       query = query.total_artists
       width = 3
       type  = "info"
     }
 
-    # Card: Total Albums
     card {
       query = query.total_albums
       width = 3
       type  = "info"
     }
 
-    # Card: Total Tracks
     card {
       query = query.total_tracks
       width = 3
       type  = "info"
     }
 
-    # Card: Unique Genres
     card {
       query = query.unique_genres
       width = 3
@@ -34,11 +29,9 @@ dashboard "spotify_analysis_dashboard" {
     }
   }
 
-  # Container: Music Genres and Diversity
   container {
     title = "Music Genres and Diversity"
 
-    # Chart: Genre Distribution Among Artists
     chart {
       query = query.top_genres_by_artists
       title = "Top 10 Genres by Artist Association"
@@ -46,46 +39,56 @@ dashboard "spotify_analysis_dashboard" {
       type  = "pie"
     }
 
-    # Chart: Tracks per Genre
     chart {
       query = query.top_genres_by_tracks
       title = "Top 10 Genres by Track Production"
       width = 6
       type  = "bar"
+      series "Number of Tracks" {
+        title = "Number of Tracks"
+        color = "darkblue"
+      }
     }
   }
 
-  # Container: Artist Popularity and Reach
   container {
     title = "Artist Popularity and Reach"
 
-    # Chart: Top Artists by Popularity
     chart {
       query = query.top_artists_by_popularity
       title = "Top 10 Artists by Popularity"
       width = 6
       type  = "bar"
+      series "popularity" {
+        title = "Popularity"
+        color = "darkgreen"
+      }
     }
 
-    # Chart: Top Artists by Followers
     chart {
       query = query.top_artists_by_followers
       title = "Top 10 Artists by Followers"
       width = 6
       type  = "bar"
+      series "followers" {
+        title = "Followers"
+        color = "darkred"
+      }
     }
   }
 
-  # Container: Album Insights
   container {
     title = "Album and Track Insights"
 
-    # Chart: Top Albums by Popularity
     chart {
       query = query.top_albums_by_popularity
       title = "Top 10 Albums by Popularity"
       width = 6
       type  = "bar"
+      series "popularity" {
+        title = "Popularity"
+        color = "deeppink"
+      }
     }
 
     chart {
@@ -93,9 +96,15 @@ dashboard "spotify_analysis_dashboard" {
       title = "Top 10 Popular Tracks"
       width = 6
       type  = "bar"
+      series "popularity" {
+        title = "Popularity"
+        color = "purple"
+      }
     }
   }
 }
+
+# Card Queries
 
 query "total_artists" {
   sql = <<-EOQ
@@ -127,11 +136,13 @@ query "total_tracks" {
 query "unique_genres" {
   sql = <<-EOQ
     select
-      count(distinct genre_id) as "Unique Genres"
+      count(distinct genre_id) as "No Of Unique Genres"
     from
       r_artist_genre;
   EOQ
 }
+
+# Chart Queries
 
 query "top_artists_by_popularity" {
   sql = <<-EOQ
