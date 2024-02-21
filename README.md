@@ -19,15 +19,20 @@ git clone https://github.com/turbot/powerpipe-mod-spotify.git
 cd powerpipe-mod-spotify
 ```
 
-## Get the Dataset
+## Install the Dataset
 
-Log in to Kaggle, download the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features).
+- Visit the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features).
 
-Unzip the file to the cloned mod directory.
+- Click on `Download` (Free signup to Kaggle is required).
 
-```sh
-unzip /Users/username/Downloads/archive.zip
-```
+- Unzip the Downloaded File:
+
+  - For Mac/Linux:
+    - Use the command `unzip ~/Downloads/archive.zip` to extract the file.
+
+  - For Windows:
+    - Navigate to the folder containing the downloaded ZIP file, usually the Downloads folder.
+    - Right-click on the ZIP file and choose `Extract All...` or `Extract Here` depending on your preference. Follow the on-screen instructions to complete the extraction.
 
 ## Usage
 
