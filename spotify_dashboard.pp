@@ -1,29 +1,31 @@
-dashboard "spotify_analysis_dashboard" {
-  title = "Spotify Analysis Dashboard"
+dashboard "spotify_dashboard" {
+
+  title         = "Spotify Dashboard"
+  documentation = file("./docs/spotify_dashboard.md")
 
   container {
     title = "Overview"
 
     card {
-      query = query.total_artists
+      query = query.spotify_artists_count
       width = 3
       type  = "info"
     }
 
     card {
-      query = query.total_albums
+      query = query.spotify_albums_count
       width = 3
       type  = "info"
     }
 
     card {
-      query = query.total_tracks
+      query = query.spotify_tracks_count
       width = 3
       type  = "info"
     }
 
     card {
-      query = query.unique_genres
+      query = query.spotify_unique_genres_count
       width = 3
       type  = "info"
     }
@@ -33,14 +35,14 @@ dashboard "spotify_analysis_dashboard" {
     title = "Music Genres and Diversity"
 
     chart {
-      query = query.top_genres_by_artists
+      query = query.spotify_top_genres_by_artists
       title = "Top 10 Genres by Artist Association"
       width = 6
       type  = "pie"
     }
 
     chart {
-      query = query.top_genres_by_tracks
+      query = query.spotify_top_genres_by_tracks
       title = "Top 10 Genres by Track Production"
       width = 6
       type  = "bar"
@@ -55,7 +57,7 @@ dashboard "spotify_analysis_dashboard" {
     title = "Artist Popularity and Reach"
 
     chart {
-      query = query.top_artists_by_popularity
+      query = query.spotify_top_artists_by_popularity
       title = "Top 10 Artists by Popularity"
       width = 6
       type  = "bar"
@@ -66,7 +68,7 @@ dashboard "spotify_analysis_dashboard" {
     }
 
     chart {
-      query = query.top_artists_by_followers
+      query = query.spotify_top_artists_by_followers
       title = "Top 10 Artists by Followers"
       width = 6
       type  = "bar"
@@ -81,7 +83,7 @@ dashboard "spotify_analysis_dashboard" {
     title = "Album and Track Insights"
 
     chart {
-      query = query.top_albums_by_popularity
+      query = query.spotify_top_10_albums_by_popularity
       title = "Top 10 Albums by Popularity"
       width = 6
       type  = "bar"
@@ -92,7 +94,7 @@ dashboard "spotify_analysis_dashboard" {
     }
 
     chart {
-      query = query.most_popular_tracks
+      query = query.spotify_top_10__popular_tracks
       title = "Top 10 Popular Tracks"
       width = 6
       type  = "bar"
@@ -106,7 +108,7 @@ dashboard "spotify_analysis_dashboard" {
 
 # Card Queries
 
-query "total_artists" {
+query "spotify_artists_count" {
   sql = <<-EOQ
     select
       count(*) as "Total Artists"
@@ -115,7 +117,7 @@ query "total_artists" {
   EOQ
 }
 
-query "total_albums" {
+query "spotify_albums_count" {
   sql = <<-EOQ
     select
       count(*) as "Total Albums"
@@ -124,7 +126,7 @@ query "total_albums" {
   EOQ
 }
 
-query "total_tracks" {
+query "spotify_tracks_count" {
   sql = <<-EOQ
     select
       count(*) as "Total Tracks"
@@ -133,7 +135,7 @@ query "total_tracks" {
   EOQ
 }
 
-query "unique_genres" {
+query "spotify_unique_genres_count" {
   sql = <<-EOQ
     select
       count(distinct genre_id) as "No Of Unique Genres"
@@ -144,7 +146,7 @@ query "unique_genres" {
 
 # Chart Queries
 
-query "top_artists_by_popularity" {
+query "spotify_top_artists_by_popularity" {
   sql = <<-EOQ
     select
       name,
@@ -158,7 +160,7 @@ query "top_artists_by_popularity" {
   EOQ
 }
 
-query "top_artists_by_followers" {
+query "spotify_top_artists_by_followers" {
   sql = <<-EOQ
     select
       name,
@@ -172,7 +174,7 @@ query "top_artists_by_followers" {
   EOQ
 }
 
-query "top_albums_by_popularity" {
+query "spotify_top_10_albums_by_popularity" {
   sql = <<-EOQ
     select
       name,
@@ -186,7 +188,7 @@ query "top_albums_by_popularity" {
   EOQ
 }
 
-query "most_popular_tracks" {
+query "spotify_top_10__popular_tracks" {
   sql = <<-EOQ
     select
       name,
@@ -200,7 +202,7 @@ query "most_popular_tracks" {
   EOQ
 }
 
-query "top_genres_by_artists" {
+query "spotify_top_genres_by_artists" {
   sql = <<-EOQ
     select
       rag.genre_id,
@@ -216,7 +218,7 @@ query "top_genres_by_artists" {
   EOQ
 }
 
-query "top_genres_by_tracks" {
+query "spotify_top_genres_by_tracks" {
   sql = <<-EOQ
     select
       rag.genre_id,

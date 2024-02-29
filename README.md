@@ -1,8 +1,21 @@
-# Spotify Data Analysis Mod for PowerPipe
+# Spotify Mod for Powerpipe
 
-Spotify Tracks, Genre and Audio Features data analysis using SQLite and PowerPipe.
+Spotify Tracks, Genre and Audio Features data analysis using SQLite and Powerpipe.
 
-![spotify-analysis-dashboard](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/a80f0972-b993-4d2f-95c3-7429a20ac789)
+![image](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/a80f0972-b993-4d2f-95c3-7429a20ac789)
+
+## Overview
+
+Dashboards can help answer questions like:
+
+- How many artists are currently available on Spotify?
+- What is the total number of albums available on Spotify?
+- How many tracks are there on Spotify?
+- How many unique genres are represented on Spotify?
+
+## Documentation
+
+- **[Dashboards →](https://hub.powerpipe.io/mods/turbot/spotify/dashboards)**
 
 ## Installation
 
@@ -12,27 +25,20 @@ Download and install Powerpipe (https://powerpipe.io/downloads). Or use Brew:
 brew install turbot/tap/powerpipe
 ```
 
-## Clone the Mod Repository
+Clone:
 
 ```sh
 git clone https://github.com/turbot/powerpipe-mod-spotify.git
 cd powerpipe-mod-spotify
 ```
 
-## Install the Dataset
+Download the [Spotify Dataset Page](https://www.kaggle.com/datasets/shahjhanalam/movie-data-analytics-dataset/data) (requires signup with [Kaggle](https://www.kaggle.com/))
 
-- Visit the [Spotify Data Analytics Dataset](https://www.kaggle.com/datasets/maltegrosse/8-m-spotify-tracks-genre-audio-features).
+Extract the downloaded file in the current directory:
 
-- Click on `Download` (Free signup to Kaggle is required).
-
-- Unzip the Downloaded File:
-
-  - For Mac/Linux:
-    - Use the command `unzip ~/Downloads/archive.zip` to extract the file.
-
-  - For Windows:
-    - Navigate to the folder containing the downloaded ZIP file, usually the Downloads folder.
-    - Right-click on the ZIP file and choose `Extract All...` or `Extract Here` depending on your preference. Follow the on-screen instructions to complete the extraction.
+```sh
+unzip ~/Downloads/archive.zip
+```
 
 ## Usage
 
