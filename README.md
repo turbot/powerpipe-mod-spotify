@@ -2,7 +2,7 @@
 
 Spotify Tracks, Genre and Audio Features data analysis using SQLite and Powerpipe.
 
-![image](https://github.com/turbot/powerpipe-mod-spotify/assets/72413708/a80f0972-b993-4d2f-95c3-7429a20ac789)
+![image](https://github.com/turbot/powerpipe-mod-spotify/blob/initial-set/docs/spotify_dashboard_screenshot.png)
 
 ## Overview
 
