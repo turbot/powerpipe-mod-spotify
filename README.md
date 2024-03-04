@@ -32,7 +32,7 @@ git clone https://github.com/turbot/powerpipe-mod-spotify.git
 cd powerpipe-mod-spotify
 ```
 
-Download the [Spotify Dataset Page](https://www.kaggle.com/datasets/shahjhanalam/movie-data-analytics-dataset/data) (requires signup with [Kaggle](https://www.kaggle.com/))
+Download the [Spotify Dataset Page](https://www.kaggle.com/datasets/shahjhanalam/movie-data-analytics-dataset/versions/1) (requires signup with [Kaggle](https://www.kaggle.com/))
 
 Extract the downloaded file in the current directory:
 
