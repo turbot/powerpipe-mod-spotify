@@ -1,6 +1,6 @@
 # Spotify Mod for Powerpipe
 
-Spotify Tracks, Genre and Audio Features data analysis using [SQLite](https://sqlite.org) and [Powerpipe](https://powerpipe.io).
+[Spotify](https://open.spotify.com/) Tracks, Genre and Audio Features data analysis using [SQLite](https://sqlite.org) and [Powerpipe](https://powerpipe.io).
 
 ![image](https://github.com/turbot/powerpipe-mod-spotify/blob/initial-set/docs/spotify_dashboard_screenshot.png)
 
