@@ -17,7 +17,9 @@ Dashboards can help answer questions like:
 
 - **[Dashboards →](https://hub.powerpipe.io/mods/turbot/spotify/dashboards)**
 
-## Installation
+## Getting Started
+
+### Installation
 
 Download and install Powerpipe (https://powerpipe.io/downloads). Or use Brew:
 
@@ -50,7 +52,7 @@ Start the dashboard server with the DB connection string:
 powerpipe server --database sqlite:spotify.sqlite
 ```
 
-Browse and view your dashboards at **https://localhost:9033**.
+Browse and view your dashboards at **http://localhost:9033**.
 
 ## Open Source & Contributing
 
