@@ -3,4 +3,4 @@
 _What's new?_
 
 - New dashboard:
-  - Spotify Dashboard. ([#1](https://github.com/turbot/powerpipe-mod-spotify/pull/1))
+  - [Spotify Dashboard](https://hub.powerpipe.io/mods/turbot/powerpipe-mod-spotify/dashboard.spotify)
