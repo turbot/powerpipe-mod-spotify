@@ -1,7 +1,7 @@
-dashboard "spotify_dashboard" {
+dashboard "spotify" {
 
   title         = "Spotify Dashboard"
-  documentation = file("./docs/spotify_dashboard.md")
+  documentation = file("./docs/spotify.md")
 
   container {
     title = "Overview"

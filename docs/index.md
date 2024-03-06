@@ -1,17 +1,8 @@
-# Spotify Mod for Powerpipe
+# Spotify Mod
 
 View dashboards to analyze [Spotify](https://open.spotify.com/) Tracks, Genre and Audio Features, and more.
 
-![image](https://raw.githubusercontent.com/turbot/powerpipe-mod-spotify/main/docs/spotify_dashboard_screenshot.png)
-
-## Overview
-
-Dashboards can help answer questions like:
-
-- How many artists are currently available on Spotify?
-- What is the total number of albums available on Spotify?
-- How many tracks are there on Spotify?
-- How many unique genres are represented on Spotify?
+<img src="https://raw.githubusercontent.com/turbot/powerpipe-mod-spotify/main/docs/spotify_dashboard_screenshot.png" width="50%" type="thumbnail"/>
 
 ## Documentation
 
